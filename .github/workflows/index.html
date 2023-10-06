@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Test</title>
+		<script src="back.js"></script>
+		<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h2 id="ques">Questions</h2>
+	<div id="display" class="container"><p id="qtest" class="question" >They ____ the bus to work.</p></div>
+
+	<button id="op1" class="options" onclick="correct()">take</button>
+	<button id="op2" class="options" onclick="incorrect()">tooks</button>
+	<button id="op3" class="options" onclick="incorrect()">taker</button><br>
+	
+	<button id="sbmt" class="options" style="margin-top: 50px; " onclick="changeQues(); toggleWrong();">Submit</button>
+	
+	<h2 id="res" style="display: none;">Sorry, Wrong anwser.</h2>
+</body>
+</html>
