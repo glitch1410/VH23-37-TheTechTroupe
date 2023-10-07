@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Word Bridge</title>
+		<script src="back.js"></script>
+		<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h2 id="ques">सवाल</h2>
+	<div id="display" class="container"><p id="qtest" class="question" >They ____ the bus to work.</p></div>
+	<div id="ops">
+		<button id="op1" class="options"></button>
+		<button id="op2" class="options"></button>
+		<button id="op3" class="options"></button><br>
+	</div>
+	<button id="sbmt" class="options" style="margin-top: 30px; background-color: rgb(232, 116, 22); " onclick="showAns(); toggleWrong();">जमा करें</button>
+	
+	<h2 id="res1" style="display: none;">🎉अभिनंदन🎉</h2>
+	<h2 id="res2" style="display: none;">गलत जवाब</h2>
+	<h2 style="text-align: left; text-indent: 10%;">कृपया वाक्य पूरा करें</h2>
+	<div id="mascot" class="container2">
+
+		<div class="button-container" style="display: inline;margin: auto; display: flex; flex-wrap: wrap;">
+			<button id="nex"class="nexpre" onclick="prevQuestion(); incorrect(); toggleOff(); changeOption();"><span></span>Previous</button>
+			<button id="pre"class="nexpre" onclick="nextQuestion(); incorrect(); toggleOff(); changeOption();"><span></span>Next</button>
+		</div>
+
+	</div>
+
+	
+</body>
+</html>

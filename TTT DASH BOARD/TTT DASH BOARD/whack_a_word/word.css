@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url("./mario-bg\ \(1\).jpg");
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+   
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("./grass.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+   
+    width: 180px; 
+    height: 180px;
+    background-image: url("./pipe.png");
+    background-size: cover;
+}
+#board div p {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 35px;
+	text-align: center;
+	vertical-align: middle;
+	background-position: center;
+	border-radius: 20px;
+	margin-top: 10px;
+	background-color: cyan;
+}  
+.some {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 60px;
+	text-align: center;
+	vertical-align: middle;
+	background-position: center;
+	background-color: coral;
+	border-radius: 20px;
+	margin-top: 50px;
+} 
