@@ -1,9 +1,14 @@
 body {
 	font-family: 'Times New Roman', Times, serif;
+	
+	justify-content: center;
 	font-size: medium;
 	text-align: center;
 	background-color:burlywood;
+	background-image: url(img.jpg);
+	backdrop-filter: blur(5px);
 	background-size: cover;
+	background-position: center;
 }
 #display {
 	width: 720px;
@@ -62,12 +67,30 @@ body {
 	width: 200px;
     padding: 15px 0;
     text-align: center;
-    color: #0e0e0e;
-    margin: 10px 1200px;
+    color: #0e0404;
+    margin: 10px 750px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #d09d1b;
-    background: transparent;
+    border: 2px solid #0d6fbf;
+    background: rgb(29, 215, 12);
+	opacity: 90%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+	align-items: top;
+}
+
+.prenex {
+	width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    color: #0e0e0e;
+    margin: 10px 750px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0d6fbf;
+    background: rgb(176, 8, 8);
+	opacity: 90%;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -75,7 +98,7 @@ body {
 }
 
 span {
-    background: #d09d1b;
+    background: #a09da2;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -84,6 +107,7 @@ span {
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
+
 }
 
 button:hover span{
@@ -94,3 +118,14 @@ button:hover span{
 button:hover span{
     border: none;
 }
+.color-change-button {
+    
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.color-change-button:active {
+    background-color: #f0dd09;
+}
+

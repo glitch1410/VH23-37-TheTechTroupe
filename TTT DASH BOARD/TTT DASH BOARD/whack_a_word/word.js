@@ -15,9 +15,9 @@ function SetGame(){
                 tile.addEventListener("click",selectTile);
 		document.getElementById("board").appendChild(tile); 
     }
-	setInterval(setWord, 3000); 
-	setInterval(setWrong, 3000);
-	setInterval(randomi, 2000);
+	var myWrong = setInterval(setWord, 3000); 
+	var myWord = setInterval(setWrong, 3000);
+	var myran = setInterval(randomi, 2000);
 	var myInter = setInterval(setQues, 3000);
 	
 }
@@ -37,6 +37,7 @@ function setWord(){
     let word = document.createElement("p");
 	word.innerText=rightWord[some].english;
 	
+	
 	let num = getRandom();
 	if(currWrongTile && currWrongTile.id == num){
 		return;
@@ -51,6 +52,7 @@ function setWrong(){
 	}
     let word = document.createElement("p");
 	word.innerText=wrongWord[some].wrong;
+	
 	
 	
 	let num = getRandom();
@@ -101,6 +103,8 @@ function setQues(){
 }
 function forceIntervalIteration() {
 	clearInterval(myInter);
+	clearInterval(myWord);
+	clearInterval(myWrong);
 	setQues(); 
 	myInter = setInterval(setQues, 3000);
 }

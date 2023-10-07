@@ -62,10 +62,17 @@ function toggleOff(){
 	result2.style.display = "none";
 }
 
+function speak(text) {
+	const speech = new SpeechSynthesisUtterance();
+	speech.text = text;
+	speechSynthesis.speak(speech);
+}
+
 function showAns(){
 	var ques = document.getElementById("qtest");
 	if(corAns){
 		ques.innerHTML = questions[currentQuestion - 1].answer;
+		speak(questions[currentQuestion - 1].answer);
 	}
 	else{
 		ques.innerHTML = questions[currentQuestion - 1].question;
@@ -119,6 +126,9 @@ function prevQuestion() {
 	ops1.disabled = false
 	ops2.disabled = false
 	ops3.disabled = false
+}
+function changeColor(){
+	
 }
 
 
